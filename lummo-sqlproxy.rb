@@ -46,6 +46,6 @@ class LummoSqlproxy < Formula
   end
 
   def post_install
-    system(curl -s https://raw.githubusercontent.com/bukukasio/lummo-sqlproxy/master/scripts/install_prerequisites.sh | bash)
+    system "curl", "-s", "https://raw.githubusercontent.com/bukukasio/lummo-sqlproxy/master/scripts/install_prerequisites.sh"
   end
 end
