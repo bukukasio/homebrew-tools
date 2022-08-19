@@ -4,13 +4,14 @@ Homebrew formula for installing Bukukas's apps & tools.
 
 ## How To Use
 
-Add repository:
+Installation:
 
 ```
 brew tap bukukasio/tools
+brew install lummo-sqlproxy
 ```
 
-Install [lummo-sqlproxy](https://github.com/bukukasio/lummo-sqlproxy):
+Or you can directly install the tool [lummo-sqlproxy](https://github.com/bukukasio/lummo-sqlproxy):
 
 ```
 brew install bukukasio/tools/lummo-sqlproxy
