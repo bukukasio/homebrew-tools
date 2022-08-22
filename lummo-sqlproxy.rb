@@ -10,7 +10,7 @@ class LummoSqlproxy < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Darwin_x86_64.tar.gz"
-      sha256 "8099ef44c0a709f364f499c6005d91e5b06d04ce7ee3ca7dffba383470fb9a97"
+      sha256 "9407afb6bc5ba6b373595257ec2bca64dcf1a58089c145b5f4cd9ef16e3eadcc"
 
       def install
         bin.install "lummo-sqlproxy"
@@ -18,7 +18,7 @@ class LummoSqlproxy < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Darwin_arm64.tar.gz"
-      sha256 "81d7d569314e81cb38ade2c99009687a1ac06b9d3d9f535a711b2abce9b23bd8"
+      sha256 "4b66150e9a8b1ede19205c441e6e63eca98752aea4aca4b5fb2f61923e9ca4b4"
 
       def install
         bin.install "lummo-sqlproxy"
@@ -27,17 +27,17 @@ class LummoSqlproxy < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Linux_arm64.tar.gz"
-      sha256 "01481fcce98625d24b35493502faf87e1161d5efd400a31a86a4d439e34c65ac"
+    if Hardware::CPU.intel?
+      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Linux_x86_64.tar.gz"
+      sha256 "b5122f1a29ac8e7f8ca04ea1dbcef1d33e91c103b7f8bd47f6f93aa2699454bb"
 
       def install
         bin.install "lummo-sqlproxy"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Linux_x86_64.tar.gz"
-      sha256 "9a637cc34a7a69a814cedcb4dcf2613a2b93f02f1c0ed86725e8fa255156196d"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Linux_arm64.tar.gz"
+      sha256 "9224ec2db9a49e4e334d9f6f252e7960d92a9e322c5893b60cdc23a7f478ee7f"
 
       def install
         bin.install "lummo-sqlproxy"
