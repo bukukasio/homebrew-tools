@@ -5,20 +5,20 @@
 class LummoSqlproxy < Formula
   desc ""
   homepage "https://github.com/bukukasio/homebrew-tools"
-  version "1.0.16"
+  version "1.0.17"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Darwin_x86_64.tar.gz"
-      sha256 "9407afb6bc5ba6b373595257ec2bca64dcf1a58089c145b5f4cd9ef16e3eadcc"
+      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.17/lummo-sqlproxy_1.0.17_Darwin_x86_64.tar.gz"
+      sha256 "c7fd30b1825f16bfd9212ac27387354b3d1bf86e23e2d286861a32b87e1977f0"
 
       def install
         bin.install "lummo-sqlproxy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Darwin_arm64.tar.gz"
-      sha256 "4b66150e9a8b1ede19205c441e6e63eca98752aea4aca4b5fb2f61923e9ca4b4"
+      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.17/lummo-sqlproxy_1.0.17_Darwin_arm64.tar.gz"
+      sha256 "ea4ef8ee6b698c8d2857feb84a1564fd014f49ce0200cd5e8426e5c2bbe18159"
 
       def install
         bin.install "lummo-sqlproxy"
@@ -27,17 +27,17 @@ class LummoSqlproxy < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Linux_x86_64.tar.gz"
-      sha256 "b5122f1a29ac8e7f8ca04ea1dbcef1d33e91c103b7f8bd47f6f93aa2699454bb"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.17/lummo-sqlproxy_1.0.17_Linux_arm64.tar.gz"
+      sha256 "1196c829d70bec1caac9b8d968d1552742c41ea582e8f0b34395dee0220d2324"
 
       def install
         bin.install "lummo-sqlproxy"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.16/lummo-sqlproxy_1.0.16_Linux_arm64.tar.gz"
-      sha256 "9224ec2db9a49e4e334d9f6f252e7960d92a9e322c5893b60cdc23a7f478ee7f"
+    if Hardware::CPU.intel?
+      url "https://github.com/bukukasio/lummo-sqlproxy/releases/download/v1.0.17/lummo-sqlproxy_1.0.17_Linux_x86_64.tar.gz"
+      sha256 "7bfdc92cb47c7372b1d4875939f0a4deca2b5707e8415de20ee8e1e10867418e"
 
       def install
         bin.install "lummo-sqlproxy"
