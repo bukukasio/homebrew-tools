@@ -9,7 +9,7 @@ class JangoFett < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Darwin_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Darwin_x86_64.tar.gz"
       sha256 "6d16b593c11734243005d807411de07073986182bc421bfc37b7a30e29ccd5bd"
 
       def install
@@ -17,7 +17,7 @@ class JangoFett < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Darwin_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Darwin_arm64.tar.gz"
       sha256 "89fcf9ef2f1e20069de769e57a4e38a5ba671f46e01a0d879fc282194e6655a8"
 
       def install
@@ -28,7 +28,7 @@ class JangoFett < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Linux_x86_64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Linux_x86_64.tar.gz"
       sha256 "2e57e4ddab66e008ea4163b94ba8dfe4da9eb1dacb40a1182f9c108025569e15"
 
       def install
@@ -36,7 +36,7 @@ class JangoFett < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Linux_arm64.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/bukukasio/jango-fett/releases/download/v0.0.2/jango-fett_0.0.2_Linux_arm64.tar.gz"
       sha256 "dd699a7ccff05efc91a431bb86fd3c4f53096ee632fb83967e6b588e67b68cf6"
 
       def install
