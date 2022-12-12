@@ -6,20 +6,20 @@ require_relative "custom_download_strategy"
 class Jf < Formula
   desc ""
   homepage "https://github.com/bukukasio/homebrew-tools"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bukukasio/jf/releases/download/v0.0.1/jf_0.0.1_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e5038a8eecfa449a1ea9fa84f26b44de510ad29b02ee53a72fe1b96f7ca7fd24"
+      url "https://github.com/bukukasio/jf/releases/download/v0.0.2/jf_0.0.2_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "7d8dc454e646b922466a489b844c85e10542808693ad0ff93004d9d7fd6cab02"
 
       def install
         bin.install "jf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bukukasio/jf/releases/download/v0.0.1/jf_0.0.1_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "da1360ab61836debefd84205615c27c97e535e98308875eb0a954b1e7fca1af7"
+      url "https://github.com/bukukasio/jf/releases/download/v0.0.2/jf_0.0.2_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "8f2fb21a0ad5273ee7c00b54e760bbf4bd18546f40dc36a3022276f73e6030e7"
 
       def install
         bin.install "jf"
@@ -29,16 +29,16 @@ class Jf < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bukukasio/jf/releases/download/v0.0.1/jf_0.0.1_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "f451ce8089a14ce329b37a507040fdcb5be2e50c6e599973fb16f0affade30b5"
+      url "https://github.com/bukukasio/jf/releases/download/v0.0.2/jf_0.0.2_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "d0785091addbe1334da29b7fd88db2b7009b6a237d5482a12b24c52b0e7053b8"
 
       def install
         bin.install "jf"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bukukasio/jf/releases/download/v0.0.1/jf_0.0.1_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "6ca118210c717e6c5d4e7e8f41e7797cf0170a475908fc66a1ed1fc21a2f7060"
+      url "https://github.com/bukukasio/jf/releases/download/v0.0.2/jf_0.0.2_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "fde897520dd8ec4a2c9bed46933b90b5d2ea8d6daf214558184fe040699fef19"
 
       def install
         bin.install "jf"
